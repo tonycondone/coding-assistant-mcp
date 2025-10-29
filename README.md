@@ -1,38 +1,38 @@
-# Coding Assistant MCP Server and VS Code Extension
+# Coding Assistant MCP Server & VS Code Extension
 
-This repository contains the source code for the **Coding Assistant**, a specialized AI tool designed to enhance development workflows. It consists of two main components:
+A dedicated repository for the **Coding Assistant**, an AI-powered tool designed to streamline development workflows.
 
-1.  **Custom Model Context Protocol (MCP) Server**: A Node.js backend that exposes a rich set of tools for file manipulation, Git operations, and code analysis within the workspace.
-2.  **VS Code Extension Client**: A minimal client that integrates the MCP server into the Visual Studio Code environment, enabling AI-driven development capabilities.
+This project comprises two core components:
 
-## Getting Started
+1.  **Custom MCP Server** (Node.js): A backend that provides the AI agent with powerful tools for workspace interaction.
+    *   **File Management**: Read, write, and list files.
+    *   **Code Analysis**: Basic structural analysis (functions, imports).
+    *   **Version Control**: Full Git integration (status, diff, commit, log).
 
-### 1. MCP Server Setup (`/backend`)
+2.  **VS Code Extension Client**: The client that integrates the MCP server's capabilities directly into the Visual Studio Code environment.
 
-To set up the server:
+## 🚀 Quick Start
 
-```bash
-cd backend
-pnpm install
-```
+### 1. Server Setup (`/backend`)
+
+The server is a Node.js application.
+
+| Command | Description |
+| :--- | :--- |
+| `cd backend` | Navigate to the server directory. |
+| `pnpm install` | Install dependencies. |
+| `node mcp-server.js` | Run the server on `stdio`. |
 
 ### 2. VS Code Extension
 
-The extension is designed to be packaged and published to the VS Code Marketplace.
+The extension is ready for packaging and publishing.
 
-**Packaging:**
+| Command | Description |
+| :--- | :--- |
+| `vsce package` | Create the VSIX file for installation. |
+| `vsce publish` | Publish to the VS Code Marketplace (requires PAT). |
 
-```bash
-vsce package
-```
-
-**Publishing (Requires Personal Access Token):**
-
-```bash
-vsce publish
-```
-
-For detailed instructions on publishing, please refer to the official [VS Code Publishing Extensions documentation](https://code.visualstudio.com/api/working-with-extensions/publishing-extension).
+For detailed publishing instructions, please see the [official VS Code documentation](https://code.visualstudio.com/api/working-with-extensions/publishing-extension).
 
 ***
 
