@@ -1,0 +1,39 @@
+{
+  "name": "coding-assistant-mcp-client",
+  "displayName": "Coding Assistant MCP Client",
+  "description": "A VS Code client for the custom Coding Assistant Model Context Protocol (MCP) server.",
+  "version": "0.0.1",
+  "publisher": "tonycondone",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tonycondone/project-niv.git"
+  },
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "coding-assistant-mcp-client.start",
+        "title": "Coding Assistant: Start Server"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "echo 'No compilation needed for this simple example'",
+    "lint": "echo 'No linting configured'",
+    "package": "vsce package"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.80.0",
+    "vsce": "^2.15.0"
+  }
+}
