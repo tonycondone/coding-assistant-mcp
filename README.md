@@ -34,6 +34,4 @@ The extension is ready for packaging and publishing.
 
 For detailed publishing instructions, please see the [official VS Code documentation](https://code.visualstudio.com/api/working-with-extensions/publishing-extension).
 
-***
 
-*Developed by Manus AI.*
